@@ -1,0 +1,117 @@
+html {
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 0rem;
+}
+
+html::selection {
+  background-color: #5f7a8d;
+  color: #212529;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transform: translateY(0);
+}
+
+.active {
+  color: #5f7a8d !important;
+  font-weight: bold !important;
+}
+
+.bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #ffc107;
+  opacity: 0.9;
+}
+
+.MoEYS-certificate::before,
+.UC-certificate::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.MoEYS-certificate::before {
+  background-image: url(../img/MoEYS-Cambodia.png);
+}
+
+.UC-certificate::before {
+  background-image: url(../img/uc.png);
+  opacity: 0.25;
+}
+
+canvas {
+  display: block;
+}
+
+.gpa-chart-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.pfl-heading {
+  top: 20%;
+  left: 5%;
+  z-index: 0;
+}
+
+.pfl-name {
+  top: 60%;
+  left: 5%;
+  z-index: 0;
+}
+.pfl-subheading {
+  top: 50%;
+  right: 5%;
+  z-index: 0;
+  max-width: 25%;
+}
+
+.btn-subheading {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #f1f0eb;
+  border: 2px solid #f1f0eb;
+}
+
+.btn-subheading:hover {
+  background-color: #f1f0eb;
+  color: #212529;
+  border: 2px solid #f1f0eb;
+}
+
+.progress-wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+
+.canvasjs-chart-credit {
+  display: none !important;
+  visibility: hidden !important;
+}
